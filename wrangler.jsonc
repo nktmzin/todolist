@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "todolist",
+  "compatibility_date": "2025-04-01",
+  "upload_source_maps": true,
+  "main": "./server.ts",
+  "assets": {
+    "directory": "./build/client"
+  },
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "TO_DO_LIST",
+      "id": "83ec37729b6a4056b95b16d63d3ed71a"
+    }
+  ]
+}
